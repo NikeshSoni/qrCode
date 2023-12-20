@@ -25,7 +25,11 @@ generate.addEventListener("click" , function (e) {
     console.log(imagePro);
 
     img.onload = () => {
-          const process = generate.textContent = 'Generated';
+
+        if (!inputVal.value) return
+              
+        const process = generate.textContent = 'Generated';
+          
           wapper.classList.add("show")
        }
 })

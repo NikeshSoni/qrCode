@@ -10,28 +10,38 @@
     align-items: center;
 }
 
-
+h1{
+    font-size: 1.5rem;
+}
 
 .qr-wapper{
     padding: 20px;
-    width: 40%;
+    width: 80%;
     background-color: aliceblue;
-    height: 250px;
+    height: 200px;
     border-radius: 10px;
     text-align: center;
     overflow: hidden;
     transition: .2s;
+}
 
-    @media (max-width:768px) {
-    width: 60%;
-    /* height: 210px; */
+
+@media (min-width:768px) {
+  
+
+    .qr-wapper{
+        width: 40%;
+        height: 210px;
+    }
+
+    h1{
+        font-size: 2rem;
+    }
         
     }
 
-}
-
 .show {
-    height: 500px;
+    height: 450px;
 }
 
 input{
